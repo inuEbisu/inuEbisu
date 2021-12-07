@@ -1,4 +1,4 @@
-![Card](https://raw.githubusercontent.com/inuEbisu/inuEbisu/main/banner.png)
+![Card](https://raw.githubusercontent.com/inuEbisu/inuEbisu/main/banner.jpg)
 
 # inuEbisu
 
