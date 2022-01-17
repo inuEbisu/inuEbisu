@@ -4,8 +4,12 @@
 
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=inuEbisu&show_icons=true&title_color=0D47A1&icon_color=0D47A1)
 
-I'm inuEbisu, a senior high student from China.
+a.k.a 犬戎
 
-Still studying C++, Python and algorithm.
+A senior high student from China
 
-Nice to meet you XD
+Still studying C++, Python and algorithm
+
+## Languages
+
+![Most Used Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=inuEbisu&layout=compact&title_color=0D47A1)
