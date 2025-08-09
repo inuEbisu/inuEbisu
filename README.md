@@ -2,7 +2,7 @@
 
 ![Banner](/banner_noise.avif)
 
-Freshman [@ZJU](https://www.zju.edu.cn/english/). Majoring in Computer Science.
+Sophomore [@ZJU](https://www.zju.edu.cn/english/), majoring in Computer Science. CTFer [@AAA](https://github.com/team-s2).
 
 Nice to meet you!
 
