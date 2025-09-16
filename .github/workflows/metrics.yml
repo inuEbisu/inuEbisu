@@ -17,9 +17,11 @@ jobs:
         with:
           filename: github-metrics/left.svg
           token: ${{ secrets.METRICS }}
+          output_action: gist
+          committer_gist: 2d78bce4a1ea649a7263463d6a9158c4
+
           template: classic
-          base: header, activity, community, repositories
-          config_timezone: Asia/Shanghai
+          base: header, activity, community, repositories\
           plugin_isocalendar: yes
           plugin_isocalendar_duration: half-year
           plugin_languages: yes
@@ -30,20 +32,30 @@ jobs:
           plugin_languages_analysis_timeout: 30
           plugin_languages_aliases: 'RenderScript:Rust'
           plugin_lines: yes
-          config_padding: 0, 8 + 11%
+
           config_order: base.header, base.activity+community, base.repositories, languages, isocalendar
+          config_padding: 0, 8 + 11%
+          config_timezone: Asia/Shanghai
+
       - name: right
         uses: lowlighter/metrics@latest
         with:
           filename: github-metrics/right.svg
           token: ${{ secrets.METRICS }}
+          output_action: gist
+          committer_gist: 953a47c3b7cb7c2db4be4045a1329f6a
+
           template: classic
           base: metadata
           plugin_achievements: yes
+          plugin_achievements_display: detailed
           plugin_achievements_limit: 8
+          plugin_achievements_threshold: X
           plugin_wakatime: yes
           plugin_wakatime_sections: time, projects, projects-graphs, languages, languages-graphs, editors, os
           plugin_wakatime_token: ${{ secrets.WAKATIME }}
-          config_padding: 0, 8 + 11%
+          
           config_order: achievements, wakatime, base.metadata
-        
+          config_padding: 0, 8 + 11%
+          config_timezone: Asia/Shanghai
+
