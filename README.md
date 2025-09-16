@@ -8,11 +8,11 @@ Nice to meet you!
 
 <p align="center">
   <a href="#">
-    <img width="400" align="top" src="/github-metrics/left.svg" />
+    <img width="400" align="top" src="https://gist.githubusercontent.com/inuEbisu/2d78bce4a1ea649a7263463d6a9158c4/raw/github-metrics.svg" />
   </a>
   &emsp;
   <a href="#">
-    <img width="400" align="top" src="/github-metrics/right.svg" />
+    <img width="400" align="top" src="https://gist.githubusercontent.com/inuEbisu/953a47c3b7cb7c2db4be4045a1329f6a/raw/github-metrics.svg" />
   </a>
 </p>
 
