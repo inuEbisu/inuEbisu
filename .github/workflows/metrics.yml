@@ -13,7 +13,7 @@ jobs:
       contents: write
     steps:
       - name: left
-        uses: lowlighter/metrics@latest
+        uses: stalomeow/metrics@projects-v2
         with:
           filename: github-metrics.svg
           token: ${{ secrets.METRICS }}
@@ -39,7 +39,7 @@ jobs:
           config_timezone: Asia/Shanghai
 
       - name: right
-        uses: lowlighter/metrics@latest
+        uses: stalomeow/metrics@projects-v2
         with:
           filename: github-metrics.svg
           token: ${{ secrets.METRICS }}
