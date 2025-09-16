@@ -20,6 +20,7 @@ jobs:
           output_action: gist
           committer_gist: 2d78bce4a1ea649a7263463d6a9158c4
 
+          user: inuEbisu
           template: classic
           base: header, activity, community, repositories\
           plugin_isocalendar: yes
@@ -44,7 +45,8 @@ jobs:
           token: ${{ secrets.METRICS }}
           output_action: gist
           committer_gist: 953a47c3b7cb7c2db4be4045a1329f6a
-
+          
+          user: inuEbisu
           template: classic
           base: metadata
           plugin_achievements: yes
