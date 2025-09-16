@@ -12,17 +12,38 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: lowlighter/metrics@latest
+      - name: left
+        uses: lowlighter/metrics@latest
         with:
+          filename: github-metrics/left.svg
           token: ${{ secrets.METRICS }}
-                    # Options
           template: classic
-          base: header, activity, community, repositories, metadata
+          base: header, activity, community, repositories
           config_timezone: Asia/Shanghai
           plugin_isocalendar: yes
           plugin_isocalendar_duration: half-year
-          plugin_languages: no
+          plugin_languages: yes
+          plugin_languages_colors: github
+          plugin_languages_limit: 8
+          plugin_languages_details: lines, percentage
+          plugin_languages_indepth: yes
+          plugin_languages_analysis_timeout: 30
+          plugin_languages_aliases: 'RenderScript:Rust'
           plugin_lines: yes
+          config_padding: 0, 8 + 11%
+          config_order: base.header, base.activity+community, base.repositories, languages, isocalendar
+      - name: right
+        uses: lowlighter/metrics@latest
+        with:
+          filename: github-metrics/right.svg
+          token: ${{ secrets.METRICS }}
+          template: classic
+          base: metadata
+          plugin_achievements: yes
+          plugin_achievements_limit: 8
           plugin_wakatime: yes
           plugin_wakatime_sections: time, projects, projects-graphs, languages, languages-graphs, editors, os
           plugin_wakatime_token: ${{ secrets.WAKATIME }}
+          config_padding: 0, 8 + 11%
+          config_order: achievements, wakatime, base.metadata
+        
