@@ -34,7 +34,7 @@ jobs:
           plugin_languages_aliases: 'RenderScript:Rust'
           plugin_lines: yes
 
-          config_order: base.header, base.activity+community, languages, base.repositories, isocalendar
+          config_order: base.header, base.repositories, languages, base.activity+community, isocalendar
           config_padding: 0, 8 + 11%
           config_timezone: Asia/Shanghai
 
